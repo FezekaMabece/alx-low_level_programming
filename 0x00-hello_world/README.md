@@ -1,1 +1,1 @@
- C program that prints exactly and that piece of art is useful
+a C program that prints the size of various types on the computer it is compiled and run on
