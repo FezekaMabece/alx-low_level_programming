@@ -1,5 +1,5 @@
-#ifndef MAIN_H_INCLUDED
-#define MAIN_H_INCLUDED
+#ifndef MAIN_H
+#define MAIN_H
 
 int _putchar(char c);
 void print_alphabet(void);
@@ -15,4 +15,6 @@ int add(int a, int b);
 void print_to_98(int n);
 void print_times_table(int n);
 void num(int r,int n);
+
+#endif
 
