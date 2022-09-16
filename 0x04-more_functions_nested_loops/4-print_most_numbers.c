@@ -17,3 +17,4 @@ if (num != 2 && num != 4)
 _putchar((num % 10) + '0');
 }
 _putchar('\n');
+}
