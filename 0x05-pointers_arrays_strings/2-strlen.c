@@ -5,10 +5,7 @@
 */
 int _strlen(char *s)
 {
-char *str;
-int len;
-str = "My first strlen!";
-len = _strlen(str);
-printf("%d\n", len);
-return (0);
+char string[]="Hello";
+len = strlen(string);
+printf("Length of string1 is: %d \n", len);
 }
