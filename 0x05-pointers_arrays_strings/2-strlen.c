@@ -5,6 +5,7 @@
 */
 int _strlen(char *s)
 {
+int len;
 char string[]="Hello";
 len = strlen(string);
 printf("Length of string1 is: %d \n", len);
