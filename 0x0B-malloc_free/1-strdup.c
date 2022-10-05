@@ -2,6 +2,7 @@
 #include <stdlib.h>
 
 /**
+* _strdup - returns a pointer to a new string which is a duplicate of the string
 * @str: the string to duplicate
 *
 * Return: the string duplicated
@@ -16,7 +17,7 @@ while (str[i])
 {
 i++;
 }
-s = malloc((sizeof(char) * i) + 1);
+s = malloc((sizeof(char) * i) +1);
 if (s == NULL)
 return (NULL);
 while (a < i)
