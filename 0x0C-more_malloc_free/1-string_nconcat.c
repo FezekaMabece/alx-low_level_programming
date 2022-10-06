@@ -29,7 +29,7 @@ str = malloc(sizeof(char) * l + 1);
 if (str == NULL)
 return (NULL);
 k = 0;
-while (j <= l)
+while (j < l)
 {
 if (j <= i)
 str[j] = s1[j];
