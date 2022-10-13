@@ -7,7 +7,9 @@
 * @argc: first argument
 * @argv: second arguement
 *
+*
 */
+
 int main(int argc, char *argv[])
 {
 int (*oprt)(int, int);
