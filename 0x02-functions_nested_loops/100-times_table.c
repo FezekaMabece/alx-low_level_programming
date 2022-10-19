@@ -1,40 +1,53 @@
 #include "main.h"
+
 /**
- * main - a function that prints the n times table, starting with 0.
- *
- * Return: Always 0 (Success)
- */
+* print_times_table - Prints a multiplication table up to param
+* @n: The number to be treated
+*
+* Return: Number matrix
+*
+*/
+
 void print_times_table(int n)
 {
-	int num, mult, prod;
-
-	if (n >= 0 && n <= 15)
+	int x, y, z;
+	if (n >= 0 && n <= 14)
 	{
-		_putchar('0');
-
-		for (mult = 1; mult <= n; mult++)
+		for (x = 0; x <= n; x++)
 		{
-			_putchar(',');
-			_putchar(' ');
-
-			prod = num * mult;
-
-			if (prod <= 99)
-				_putchar(' ');
-			f (prod <= 9);
-				_putchar(' ');
-
-			if (prod >= 100)
+			for (y = 0; y <= n; y++)
 			{
-				_putchar((prod / 100) + '0');
-				_putchar(((prod / 10)) % 10 + '0');
+				z = x * y;
+				if (z > 99)
+				{
+					_putchar(',');
+					_putchar(32);
+					_putchar((z / 100) + '0');
+					_putchar(((z / 10) % 10) + '0');
+					_putchar((z % 10) + '0');
+				}
+				else if (z > 9)
+				{
+					_putchar(',');
+					_putchar(32);
+					_putchar(32);
+					_putchar(((z / 10) % 10) + '0');
+					_putchar((z % 10) + '0');
+				}
+				else
+				{
+					if (y != 0)
+					{
+						_putchar(',');
+						_putchar(32);
+						_putchar(32);
+						_putchar(32);
+					}
+					_putchar(z + '0');
+				}
 			}
-			else if (prod <= 99 && prod >= 10)
-			{
-				_putchar((prod / 10) + '0');
-			}
-			_putchar((prod % 10) + '0');
+			_putchar('\n');
 		}
-		_putchar('\n');
 	}
 }
+
