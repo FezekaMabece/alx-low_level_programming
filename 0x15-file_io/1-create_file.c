@@ -23,6 +23,6 @@ i++;
 file = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
 if (file == -1)
 return (-1);
-write(file, text_content, i)
+write(file, text_content, i);
 return (1);
 }

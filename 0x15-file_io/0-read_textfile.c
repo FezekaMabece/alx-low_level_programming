@@ -20,7 +20,7 @@ return (0);
 if (filename == NULL)
 return (0);
 file = open(filename, O_RDONLY);
-if (filename == -1)
+if (file == -1)
 {
 free(text);
 return (0);
